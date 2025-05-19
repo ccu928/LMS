@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>🔥 店員問答模式</title>
+  <link rel="stylesheet" href="food_ollama.css">
+</head>
+<body>
+  <!-- 左右角色 -->
+  <img id="master" class="character" src="young_master.png" alt="店員">
+  <img id="apprentice" class="character" src="guest.png" alt="客人">
+
+  <!-- 對話框（中央區域） -->
+  <div id="chatBox">
+    <p>👋 歡迎提問，店員準備好幫你解答餐廳的疑難雜症！</p>
+  </div>
+
+  <!-- 輸入區 -->
+  <div id="inputArea">
+    <input id="question" placeholder="客人請提出想問的問題:D" autocomplete="off" />
+    <button id="askBtn" onclick="ask()">送出</button>
+  </div>
+
+  <script src="food_ollama.js"></script>
+</body>
+</html>
